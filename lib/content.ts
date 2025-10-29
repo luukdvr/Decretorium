@@ -2,6 +2,8 @@ import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 import { excerptFromMarkdown, LOREM } from './utils'
+import { remark } from 'remark'
+import html from 'remark-html'
 
 export type Service = {
   slug: string
@@ -123,4 +125,9 @@ export function getBlogBySlug(slug: string): Blog | null {
     }
   }
   return null
+}
+
+export async function renderMarkdown(md: string): Promise<string> {
+  const result = await remark().use(html).process(md)
+  return result.toString()
 }

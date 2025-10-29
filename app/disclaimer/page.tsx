@@ -14,7 +14,7 @@ export default function DisclaimerPage() {
       </section>
 
       <section className="section">
-        <div className="container prose max-w-3xl prose-headings:mt-0">
+        <div className="container prose max-w-3xl prose-headings:mt-6 md:prose-headings:mt-8 prose-p:my-4 prose-ul:my-4 prose-ol:my-4 prose-li:my-1.5">
           <h2>Algemeen</h2>
           <p>De informatie op deze website is met zorg samengesteld. Toch kan Decretorium niet instaan voor volledigheid, juistheid en actualiteit.</p>
 

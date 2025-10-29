@@ -14,7 +14,7 @@ export default function CookiebeleidPage() {
       </section>
 
       <section className="section">
-        <div className="container prose max-w-3xl prose-headings:mt-0">
+        <div className="container prose max-w-3xl prose-headings:mt-6 md:prose-headings:mt-8 prose-p:my-4 prose-ul:my-4 prose-ol:my-4 prose-li:my-1.5">
           <h2>Wat zijn cookies?</h2>
           <p>Cookies zijn kleine tekstbestanden die bij een bezoek aan een website op uw apparaat worden geplaatst. Ze helpen de website goed functioneren en geven inzicht in het gebruik ervan.</p>
 

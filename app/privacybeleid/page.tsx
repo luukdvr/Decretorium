@@ -14,7 +14,7 @@ export default function PrivacybeleidPage() {
       </section>
 
       <section className="section">
-        <div className="container prose max-w-3xl prose-headings:mt-0">
+        <div className="container prose max-w-3xl prose-headings:mt-6 md:prose-headings:mt-8 prose-p:my-4 prose-ul:my-4 prose-ol:my-4 prose-li:my-1.5">
           <h2>Wie zijn wij</h2>
           <p>Dit privacybeleid is van toepassing op Decretorium Security & Law (hierna: “Decretorium”). Bij vragen kunt u contact opnemen via <a href="mailto:info@decretorium.nl">info@decretorium.nl</a>.</p>
 

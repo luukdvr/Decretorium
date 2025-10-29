@@ -1,11 +1,12 @@
 import { notFound } from 'next/navigation'
-import { getServiceBySlug } from '@/lib/content'
+import { getServiceBySlug, renderMarkdown } from '@/lib/content'
 import { Picture } from '@/components/Picture'
 import Link from 'next/link'
 
-export default function ServiceDetailPage({ params }: { params: { slug: string } }) {
+export default async function ServiceDetailPage({ params }: { params: { slug: string } }) {
   const service = getServiceBySlug(params.slug)
   if (!service) return notFound()
+  const html = await renderMarkdown(service.content)
 
   return (
     <>
@@ -18,9 +19,9 @@ export default function ServiceDetailPage({ params }: { params: { slug: string }
       </section>
 
       <section className="section">
-        <div className="container prose max-w-3xl prose-headings:mt-0">
+        <div className="container prose max-w-3xl prose-headings:mt-6 md:prose-headings:mt-8 prose-p:my-4 prose-ul:my-4 prose-ol:my-4 prose-li:my-1.5">
           <p className="text-lg text-gray-700">{service.intro}</p>
-          <article className="mt-6 whitespace-pre-wrap text-gray-800">{service.content}</article>
+          <article className="mt-6 text-gray-800" dangerouslySetInnerHTML={{ __html: html }} />
           <div className="mt-8">
             <Link className="btn" href="/contact">Neem contact op</Link>
           </div>
