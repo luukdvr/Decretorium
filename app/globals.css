@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Brand primary */
+  --color-primary: #071b3a;
+  --color-primary-foreground: #FFFFFF;
+  --color-accent: #F39C12; /* fallback accent */
+  --color-accent-foreground: #0B0B0B;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-white text-gray-900 antialiased;
+  font-feature-settings: "ss01" on, "cv01" on;
+}
+
+.container {
+  @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+}
+
+.btn {
+  @apply inline-flex items-center justify-center rounded-md bg-gradient-to-r from-primary-900 to-primary-600 px-5 py-3 text-base font-semibold text-white shadow hover:opacity-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-primary-500 focus-visible:ring-opacity-60 disabled:opacity-50 disabled:cursor-not-allowed transition;
+}
+
+.btn-outline {
+  @apply inline-flex items-center justify-center rounded-md border border-primary-700 px-5 py-3 text-base font-semibold text-primary-800 hover:bg-primary-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-primary-500 focus-visible:ring-opacity-60 transition;
+}
+
+.badge-placeholder {
+  @apply inline-flex items-center rounded bg-yellow-100 px-2 py-1 text-xs font-medium text-yellow-800 align-middle ml-2;
+}
+
+.card {
+  @apply rounded-lg border border-gray-200 bg-white shadow-sm hover:shadow-md transition text-gray-900;
+}
+
+.section {
+  @apply py-12 md:py-16;
+}
+
+/* Utility for dark gradient hero bands */
+.gradient-hero {
+  @apply bg-gradient-to-br from-primary-900 to-primary-700 text-white;
+}
+
+h1 { @apply text-4xl md:text-5xl font-extrabold tracking-tight; }
+h2 { @apply text-3xl md:text-4xl font-bold tracking-tight; }
+h3 { @apply text-2xl md:text-3xl font-semibold; }
+
+img { max-width: 100%; height: auto; }
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+}
