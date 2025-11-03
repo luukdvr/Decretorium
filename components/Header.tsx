@@ -20,13 +20,13 @@ export function Header() {
           <span className="font-bold">Decretorium</span>
         </Link>
         <nav aria-label="Hoofdnavigatie" className="">
-          <ul className="flex items-center gap-4 md:gap-6">
-            <li><Link className="hover:underline" href="/diensten">Diensten</Link></li>
-            <li><Link className="hover:underline" href="/juridisch">Juridisch</Link></li>
-            <li><Link className="hover:underline" href="/mvo">MVO</Link></li>
-            <li><Link className="hover:underline" href="/blogs">Blogs</Link></li>
-            <li><Link className="hover:underline" href="/over">Over</Link></li>
-            <li><Link className="btn" href="/contact">Contact</Link></li>
+          <ul className="flex items-center gap-2 text-sm md:text-base md:gap-6">
+            <li className="hidden sm:block"><Link className="hover:underline" href="/diensten">Diensten</Link></li>
+            <li className="hidden sm:block"><Link className="hover:underline" href="/juridisch">Juridisch</Link></li>
+            <li className="hidden md:block"><Link className="hover:underline" href="/mvo">MVO</Link></li>
+            <li className="hidden md:block"><Link className="hover:underline" href="/blogs">Blogs</Link></li>
+            <li className="hidden lg:block"><Link className="hover:underline" href="/over">Over</Link></li>
+            <li><Link className="btn text-xs px-3 py-2 md:text-sm md:px-4 md:py-2.5" href="/contact">Contact</Link></li>
           </ul>
         </nav>
       </div>

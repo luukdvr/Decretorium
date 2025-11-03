@@ -5,7 +5,7 @@ export function Footer() {
     <footer className="border-t bg-gradient-to-br from-primary-900 to-primary-700 text-white">
       <div className="container py-10">
         {/* Contact blokken + link kolommen */}
-        <div className="grid gap-8 md:grid-cols-3">
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           <section aria-label="Contact beveiliging">
             <h2 className="text-base font-semibold">Contact beveiliging</h2>
             <p className="mt-1">Michael</p>
@@ -28,7 +28,7 @@ export function Footer() {
             </p>
           </section>
 
-          <nav aria-label="Footer links" className="grid grid-cols-2 gap-6 text-sm">
+          <nav aria-label="Footer links" className="grid grid-cols-2 gap-6 text-sm sm:col-span-2 lg:col-span-1">
             <div>
               <h2 className="text-base font-semibold mb-2">Snel naar</h2>
               <ul className="space-y-2 text-white/90">
