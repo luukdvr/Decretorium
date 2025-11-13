@@ -3,11 +3,12 @@
 @tailwind utilities;
 
 :root {
-  /* Brand primary */
-  --color-primary: #071b3a;
+  /* Brand primary - gray */
+  --color-primary: #4a5568;
   --color-primary-foreground: #FFFFFF;
-  --color-accent: #F39C12; /* fallback accent */
-  --color-accent-foreground: #0B0B0B;
+  /* Red accent */
+  --color-accent: #dc2626;
+  --color-accent-foreground: #FFFFFF;
 }
 
 html:focus-within {
@@ -24,11 +25,11 @@ body {
 }
 
 .btn {
-  @apply inline-flex items-center justify-center rounded-md bg-gradient-to-r from-primary-900 to-primary-600 px-4 py-2.5 text-sm md:text-base font-semibold text-white shadow hover:opacity-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-primary-500 focus-visible:ring-opacity-60 disabled:opacity-50 disabled:cursor-not-allowed transition;
+  @apply inline-flex items-center justify-center rounded-md bg-gradient-to-r from-accent-700 to-accent-600 px-4 py-2.5 text-sm md:text-base font-semibold text-white shadow hover:opacity-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-accent-500 focus-visible:ring-opacity-60 disabled:opacity-50 disabled:cursor-not-allowed transition;
 }
 
 .btn-outline {
-  @apply inline-flex items-center justify-center rounded-md border border-primary-700 px-4 py-2.5 text-sm md:text-base font-semibold text-primary-800 hover:bg-primary-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-primary-500 focus-visible:ring-opacity-60 transition;
+  @apply inline-flex items-center justify-center rounded-md border border-accent-600 px-4 py-2.5 text-sm md:text-base font-semibold text-accent-700 hover:bg-accent-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-accent-500 focus-visible:ring-opacity-60 transition;
 }
 
 .badge-placeholder {
@@ -45,7 +46,7 @@ body {
 
 /* Utility for dark gradient hero bands */
 .gradient-hero {
-  @apply bg-gradient-to-br from-primary-900 to-primary-700 text-white;
+  @apply bg-gradient-to-br from-primary-800 to-primary-700 text-white;
 }
 
 h1 { @apply text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight; }

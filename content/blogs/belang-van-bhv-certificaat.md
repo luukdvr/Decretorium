@@ -3,6 +3,7 @@ slug: belang-van-bhv-certificaat
 title: "Het Belang van een BHV-Certificaat – Veiligheid Begint bij Voorbereiding"
 date: 2025-10-28
 excerpt: "Waarom BHV in elke organisatie onmisbaar is: snelle, doeltreffende hulp bij brand, ontruiming en medische noodgevallen."
+category: beveiliging
 metaTitle: "Belang BHV-Certificaat | Veiligheid op de Werkvloer – Decretorium Beveiliging"
 metaDescription: "Ontdek het belang van een BHV-certificaat voor uw organisatie. Decretorium benadrukt het belang van goed opgeleide bedrijfshulpverleners voor maximale veiligheid op de werkvloer."
 ---

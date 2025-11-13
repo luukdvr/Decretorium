@@ -8,13 +8,13 @@ export const dynamic = 'force-static'
 
 export default function BeveiligingPage() {
   const services = getServices()
-  const blogs = getBlogs().slice(0, 3)
+  const blogs = getBlogs('beveiliging').slice(0, 3)
 
   return (
     <>
       <section aria-label="Hero beveiliging" className="relative h-[40vh] min-h-[320px] w-full">
         <Picture imageFilename="foto_beveiliging_op_aanvraag.png" altOverride="Beveiliging" className="absolute inset-0" sizes="100vw" />
-        <div className="absolute inset-0 bg-gradient-to-t from-primary-900/70 via-primary-800/30 to-transparent" aria-hidden />
+        <div className="absolute inset-0 bg-gradient-to-t from-primary-800/70 via-primary-700/30 to-transparent" aria-hidden />
         <div className="container relative z-10 flex h-full items-end pb-8">
           <h1 className="text-white">Beveiliging</h1>
         </div>

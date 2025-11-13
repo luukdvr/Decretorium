@@ -3,6 +3,7 @@ slug: belang-van-brandblusmiddelen
 title: "Het Belang van Brandblusmiddelen – Eerste Hulp bij Brandveiligheid"
 date: 2025-10-28
 excerpt: "Goedgekeurde, werkende blusmiddelen maken het verschil bij beginnende branden en horen in elk veiligheidsplan thuis."
+category: beveiliging
 metaTitle: "Belang Brandblusmiddelen | Brandveiligheid & Preventie – Decretorium Beveiliging"
 metaDescription: "Ontdek het belang van goedgekeurde brandblusmiddelen. Decretorium adviseert over brandpreventie, onderhoud en gebruik van brandblussers voor optimale veiligheid."
 ---

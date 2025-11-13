@@ -2,7 +2,8 @@
 slug: winkeldiefstal-voorkomen
 title: "Winkeldiefstal Voorkomen – Het Belang van een Professionele Winkelbeveiliger"
 date: 2025-10-28
-excerpt: "Een zichtbare, alerte en gastvrije beveiligingsaanpak verkleint risico’s op diefstal en verhoogt het veiligheidsgevoel."
+excerpt: "Een zichtbare, alerte en gastvrije beveiligingsaanpak verkleint risico's op diefstal en verhoogt het veiligheidsgevoel."
+category: beveiliging
 metaTitle: "Winkeldiefstal Voorkomen | Professionele Winkelbeveiliging – Decretorium Beveiliging"
 metaDescription: "Winkeldiefstal voorkomen met een professionele winkelbeveiliger van Decretorium. Onze beveiligers combineren alertheid, gastvrijheid en ervaring voor optimale veiligheid."
 ---

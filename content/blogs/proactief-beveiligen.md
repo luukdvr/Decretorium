@@ -2,9 +2,10 @@
 slug: proactief-beveiligen
 title: "Proactief Beveiligen – Voorkomen is Beter dan Genezen"
 date: 2025-10-28
-excerpt: "Met een preventieve, alerte aanpak herkennen en voorkomen onze beveiligers risico’s vóórdat ze incidenten worden."
+excerpt: "Met een preventieve, alerte aanpak herkennen en voorkomen onze beveiligers risico's vóórdat ze incidenten worden."
+category: beveiliging
 metaTitle: "Proactieve Beveiliging | Preventieve Veiligheidsaanpak – Decretorium Beveiliging"
-metaDescription: "Decretorium biedt proactieve beveiliging in Nederland. Onze beveiligers signaleren risico’s vroegtijdig en voorkomen incidenten door alert en professioneel optreden."
+metaDescription: "Decretorium biedt proactieve beveiliging in Nederland. Onze beveiligers signaleren risico's vroegtijdig en voorkomen incidenten door alert en professioneel optreden."
 ---
 
 Bij Decretorium geloven we dat echte veiligheid begint met preventie. Proactief beveiligen betekent risico’s signaleren en voorkomen voordat ze zich ontwikkelen tot incidenten. Onze beveiligers zijn getraind om niet alleen te reageren op situaties, maar vooral om deze te herkennen en te voorkomen. Met een alerte houding, communicatieve vaardigheden en oog voor detail dragen wij bij aan een veilige en stabiele omgeving.

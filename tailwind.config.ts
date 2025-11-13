@@ -10,24 +10,35 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Brand primary based on #071b3a
+        // Brand primary - gray tones
         primary: {
-          DEFAULT: '#071b3a',
+          DEFAULT: '#4a5568',
           foreground: '#FFFFFF',
-          50: '#e8eef7',
-          100: '#cfdced',
-          200: '#a9bce3',
-          300: '#6a93d1',
-          400: '#3c6fba',
-          500: '#22509b',
-          600: '#0e3a78',
-          700: '#071b3a',
-          800: '#05162f',
-          900: '#021025',
+          50: '#f7fafc',
+          100: '#edf2f7',
+          200: '#e2e8f0',
+          300: '#cbd5e0',
+          400: '#a0aec0',
+          500: '#718096',
+          600: '#4a5568',
+          700: '#2d3748',
+          800: '#1a202c',
+          900: '#171923',
         },
+        // Red accent matching logo
         accent: {
-          DEFAULT: 'var(--color-accent, #F39C12)',
-          foreground: 'var(--color-accent-foreground, #0B0B0B)'
+          DEFAULT: '#dc2626',
+          foreground: '#FFFFFF',
+          50: '#fef2f2',
+          100: '#fee2e2',
+          200: '#fecaca',
+          300: '#fca5a5',
+          400: '#f87171',
+          500: '#ef4444',
+          600: '#dc2626',
+          700: '#b91c1c',
+          800: '#991b1b',
+          900: '#7f1d1d',
         }
       }
     },

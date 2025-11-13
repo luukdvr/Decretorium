@@ -3,6 +3,7 @@ slug: welkom-bij-decretorium
 title: Welkom bij Decretorium
 date: 2025-10-29
 excerpt: "Maak kennis met Decretorium: betrouwbare beveiliging en nuchter juridisch advies onder één dak, met focus op helderheid, kwaliteit en resultaat."
+category: algemeen
 image: foto_blog_welkom.jpg
 ---
 

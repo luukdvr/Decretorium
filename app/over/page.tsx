@@ -5,7 +5,7 @@ export default function OverPage() {
     <>
       <section aria-label="Hero over" className="relative h-[30vh] min-h-[280px] w-full">
         <Picture imageFilename="foto_over.jpg" altOverride="Over Decretorium" className="absolute inset-0" sizes="100vw" />
-        <div className="absolute inset-0 bg-gradient-to-t from-primary-900/70 via-primary-800/30 to-transparent" aria-hidden />
+        <div className="absolute inset-0 bg-gradient-to-t from-primary-800/70 via-primary-700/30 to-transparent" aria-hidden />
         <div className="container relative z-10 flex h-full items-end pb-8">
           <h1 className="text-white">Over Decretorium</h1>
         </div>

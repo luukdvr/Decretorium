@@ -20,6 +20,7 @@ export type Blog = {
   image?: string
   content: string
   excerpt: string
+  category?: 'beveiliging' | 'juridisch' | 'algemeen'
 }
 
 const CONTENT_DIR = path.join(process.cwd(), 'content')
@@ -84,7 +85,7 @@ export function getServiceBySlug(slug: string): Service | null {
   return null
 }
 
-export function getBlogs(): Blog[] {
+export function getBlogs(category?: 'beveiliging' | 'juridisch' | 'algemeen'): Blog[] {
   const files = safeReadDir(BLOGS_DIR).filter(f => f.endsWith('.md'))
   const blogs = files.map((file) => {
     const raw = fs.readFileSync(path.join(BLOGS_DIR, file), 'utf8')
@@ -94,19 +95,23 @@ export function getBlogs(): Blog[] {
     const date = (data.date as string) || new Date().toISOString().slice(0, 10)
     const image = data.image as string | undefined
     const excerpt = (data.excerpt as string) || excerptFromMarkdown(content || LOREM)
-    return { slug, title, date, image, content: content?.trim() || LOREM, excerpt }
+    const blogCategory = (data.category as 'beveiliging' | 'juridisch' | 'algemeen') || 'algemeen'
+    return { slug, title, date, image, content: content?.trim() || LOREM, excerpt, category: blogCategory }
   })
 
-  // sort by date desc
-  blogs.sort((a, b) => (a.date < b.date ? 1 : -1))
+  // filter by category if provided
+  const filtered = category ? blogs.filter(b => b.category === category) : blogs
 
-  if (blogs.length === 0) {
+  // sort by date desc
+  filtered.sort((a, b) => (a.date < b.date ? 1 : -1))
+
+  if (filtered.length === 0 && !category) {
     return [
-      { slug: 'welkom-bij-decretorium', title: 'Welkom bij Decretorium', date: new Date().toISOString().slice(0,10), content: LOREM, excerpt: LOREM },
+      { slug: 'welkom-bij-decretorium', title: 'Welkom bij Decretorium', date: new Date().toISOString().slice(0,10), content: LOREM, excerpt: LOREM, category: 'algemeen' },
     ]
   }
 
-  return blogs
+  return filtered
 }
 
 export function getBlogBySlug(slug: string): Blog | null {
@@ -115,13 +120,15 @@ export function getBlogBySlug(slug: string): Blog | null {
     const raw = fs.readFileSync(file, 'utf8')
     const { data, content } = matter(raw)
     const date = (data.date as string) || new Date().toISOString().slice(0, 10)
+    const category = (data.category as 'beveiliging' | 'juridisch' | 'algemeen') || 'algemeen'
     return {
       slug,
       title: (data.title as string) || slug.replace(/-/g, ' '),
       date,
       image: data.image as string | undefined,
       content: content?.trim() || LOREM,
-      excerpt: excerptFromMarkdown(content || LOREM)
+      excerpt: excerptFromMarkdown(content || LOREM),
+      category
     }
   }
   return null
