@@ -10,20 +10,20 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Brand primary - gray tones
+        // Brand primary - sophisticated dark gray tones
         primary: {
-          DEFAULT: '#4a5568',
+          DEFAULT: '#181818ff',
           foreground: '#FFFFFF',
-          50: '#f7fafc',
-          100: '#edf2f7',
-          200: '#e2e8f0',
-          300: '#cbd5e0',
-          400: '#a0aec0',
-          500: '#718096',
-          600: '#4a5568',
-          700: '#2d3748',
-          800: '#1a202c',
-          900: '#171923',
+          50: '#f9f9f9ff',
+          100: '#f8f8f8ff',
+          200: '#e8e8e8ff',
+          300: '#dfdfdfff',
+          400: '#b2b2b2ff',
+          500: '#828282ff',
+          600: '#6a6a6aff',
+          700: '#545454ff',
+          800: '#3d3d3dff',
+          900: '#1c1c1cff',
         },
         // Red accent matching logo
         accent: {

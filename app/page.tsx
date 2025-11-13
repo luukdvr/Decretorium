@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { Picture } from '@/components/Picture'
 
 export default function HomePage() {
@@ -6,6 +7,17 @@ export default function HomePage() {
     <main className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 via-gray-100 to-gray-200 px-4 py-12">
       <div className="container max-w-6xl">
         <div className="text-center mb-12 md:mb-16">
+          <div className="flex justify-center mb-6 md:mb-8">
+            <div className="relative h-24 w-24 md:h-32 md:w-32">
+              <Image
+                src="/assets/logo-decretorium(1).png"
+                alt="Decretorium Logo"
+                fill
+                className="object-contain"
+                priority
+              />
+            </div>
+          </div>
           <h1 className="mb-4 text-gray-800">Welkom bij Decretorium</h1>
           <p className="text-gray-600 text-lg md:text-xl max-w-2xl mx-auto">
             Kies uw dienst om verder te gaan

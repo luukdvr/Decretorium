@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  /* Brand primary - gray */
-  --color-primary: #4a5568;
+  /* Brand primary - sophisticated dark gray */
+  --color-primary: #1f2937;
   --color-primary-foreground: #FFFFFF;
   /* Red accent */
   --color-accent: #dc2626;

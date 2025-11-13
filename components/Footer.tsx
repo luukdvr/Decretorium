@@ -1,9 +1,24 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 export function Footer() {
   return (
-    <footer className="border-t bg-gradient-to-br from-primary-900 to-primary-700 text-white">
+    <footer className="border-t bg-primary-900 text-white">
       <div className="container py-10">
+        {/* Logo section */}
+        <div className="flex justify-center mb-8">
+          <Link href="/" className="flex items-center gap-3">
+            <div className="relative h-12 w-12 md:h-16 md:w-16">
+              <Image
+                src="/assets/logo-decretorium(1).png"
+                alt="Decretorium Logo"
+                fill
+                className="object-contain"
+              />
+            </div>
+            <span className="text-xl md:text-2xl font-bold text-white">Decretorium</span>
+          </Link>
+        </div>
         {/* Contact blokken + link kolommen */}
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           <section aria-label="Contact beveiliging">

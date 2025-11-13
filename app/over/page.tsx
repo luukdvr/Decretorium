@@ -13,10 +13,10 @@ export default function OverPage() {
 
       <section className="section">
         <div className="container">
-          <p className="max-w-3xl text-gray-700 leading-relaxed mb-8">
+          <h4 className="max-w-3xl text-gray-700 leading-relaxed mb-8">
             Bij Decretorium Security &amp; Law draait alles om veiligheid, professionaliteit en vertrouwen. Wij beschermen mensen, bedrijven en
             eigendommen met maatwerkoplossingen, proactieve beveiliging en een mensgerichte benadering.
-          </p>
+          </h4>
 
           {/* Beeldband Over */}
           <div className="relative mb-8 aspect-[16/7] overflow-hidden rounded-lg">
