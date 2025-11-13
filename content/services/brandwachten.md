@@ -1,7 +1,7 @@
 ---
 slug: brandwachten
 title: Brandwachten
-image: foto festival (beveiliging op aanvraag).png
+image: foto_brandbeveiliging.png
 intro: Gecertificeerde brandwachten voor directe brandpreventie, toezicht en ondersteuning bij verhoogde risico’s.
 metaTitle: Brandwacht Inhuren | Professionele Brandwachten – Decretorium Beveiliging
 metaDescription: Decretorium levert gecertificeerde brandwachten in heel Nederland. 24/7 inzetbaar bij brandgevaar, evenementen of onderhoud. Veiligheid gegarandeerd.

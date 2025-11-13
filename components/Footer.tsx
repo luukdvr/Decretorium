@@ -8,7 +8,6 @@ export function Footer() {
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           <section aria-label="Contact beveiliging">
             <h2 className="text-base font-semibold">Contact beveiliging</h2>
-            <p className="mt-1">Michael</p>
             <p className="mt-1">
               <a className="hover:underline" href="tel:+31647652247" aria-label="Bel Michael op 06 47 65 22 47">06 47 65 22 47</a>
             </p>
@@ -19,7 +18,6 @@ export function Footer() {
 
           <section aria-label="Contact juridisch">
             <h2 className="text-base font-semibold">Contact juridisch</h2>
-            <p className="mt-1">Suviënka</p>
             <p className="mt-1">
               <a className="hover:underline" href="tel:+31645082682" aria-label="Bel Suviënka op 06 45 08 26 82">06 45 08 26 82</a>
             </p>
