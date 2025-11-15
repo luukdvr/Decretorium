@@ -4,7 +4,7 @@ import { Picture } from '@/components/Picture'
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 via-gray-100 to-gray-200 px-4 py-12">
+    <main className="min-h-screen flex items-center justify-center bg-gradient-to-br from-primary-800 via-primary-700 to-primary-800 px-4 py-12">
       <div className="container max-w-6xl">
         <div className="text-center mb-12 md:mb-16">
           <div className="flex justify-center mb-6 md:mb-8">
@@ -18,8 +18,8 @@ export default function HomePage() {
               />
             </div>
           </div>
-          <h1 className="mb-4 text-gray-800">Welkom bij Decretorium</h1>
-          <p className="text-gray-600 text-lg md:text-xl max-w-2xl mx-auto">
+          <h1 className="mb-4 text-white">Welkom bij Decretorium</h1>
+          <p className="text-white text-lg md:text-xl max-w-2xl mx-auto">
             Kies uw dienst om verder te gaan
           </p>
         </div>
@@ -85,7 +85,7 @@ export default function HomePage() {
         </div>
 
         <div className="mt-12 md:mt-16 text-center">
-          <p className="text-gray-600 text-sm md:text-base mb-4">
+          <p className="text-white text-sm md:text-base mb-4">
             Heeft u vragen of wilt u direct contact?
           </p>
           <Link href="/contact" className="btn">

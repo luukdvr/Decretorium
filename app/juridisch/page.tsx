@@ -23,8 +23,8 @@ export default function JuridischPage() {
         <div className="container">
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
             <article className="card p-6 md:p-8">
-              <h2 className="mb-2">Over ons</h2>
-              <p className="text-gray-700 leading-relaxed">
+              <h2 className="mb-2 text-white">Over ons</h2>
+              <p className="text-white leading-relaxed">
                 Welkom bij Decretorium Security &amp; Law – jouw partner in juridische duidelijkheid. Wij helpen particulieren en ondernemers met
                 heldere, praktische oplossingen voor uiteenlopende juridische vraagstukken. Met jaren ervaring behartigen we jouw belangen met
                 kennis, ervaring en persoonlijke betrokkenheid.
@@ -32,22 +32,22 @@ export default function JuridischPage() {
             </article>
 
             <article className="card p-6 md:p-8">
-              <h2 className="mb-2">Onze aanpak</h2>
-              <p className="text-gray-700 leading-relaxed">
+              <h2 className="mb-2 text-white">Onze aanpak</h2>
+              <p className="text-white leading-relaxed">
                 Goed advies begint met luisteren. We begrijpen jouw situatie, denken juridisch én strategisch mee en geven duidelijke, toepasbare
                 oplossingen. Geen moeilijke woorden of omwegen – wél helderheid en voorspelbaarheid.
               </p>
             </article>
 
             <article className="card p-6 md:p-8 md:col-span-2">
-              <h2 className="mb-2">Waarom kiezen voor Decretorium Security &amp; Law?</h2>
-              <ul className="list-disc pl-5 text-gray-800">
+              <h2 className="mb-2 text-white">Waarom kiezen voor Decretorium Security &amp; Law?</h2>
+              <ul className="list-disc pl-5 text-white">
                 <li>Persoonlijke en transparante begeleiding</li>
                 <li>Duidelijke communicatie, zonder juridisch vakjargon</li>
                 <li>Oplossingsgericht en efficiënt</li>
                 <li>Eerlijk over kansen, risico’s en kosten</li>
               </ul>
-              <p className="mt-3 text-gray-700">
+              <p className="mt-3 text-white">
                 Juridische kwesties kunnen stressvol zijn, maar je staat er niet alleen voor. Wij helpen je om weer overzicht en grip te krijgen –
                 eerlijk en begrijpelijk.
               </p>
@@ -59,8 +59,8 @@ export default function JuridischPage() {
       <section className="section">
         <div className="container">
           <article className="card p-6 md:p-8 max-w-3xl">
-            <h2 className="mb-2">Onze diensten</h2>
-            <div className="text-gray-700 leading-relaxed">
+            <h2 className="mb-2 text-white">Onze diensten</h2>
+            <div className="text-white leading-relaxed">
               <p>
                 Bij Decretorium Security &amp; Law begrijpen we dat juridische kwesties vaak meer zijn dan alleen papierwerk of regels. Achter elk
                 dossier zit jouw verhaal. Daarom kijken we verder dan standaardoplossingen en bieden we ondersteuning die echt past bij jouw situatie.
@@ -89,10 +89,10 @@ export default function JuridischPage() {
 
       
 
-      <section className="section bg-gray-50">
+      <section className="section">
         <div className="container">
           <div className="mb-6 flex items-end justify-between">
-            <h2>Laatste blogs</h2>
+            <h2 className="text-white">Laatste blogs</h2>
             <Link href="/blogs" className="btn-outline">Alle blogs</Link>
           </div>
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -104,8 +104,8 @@ export default function JuridischPage() {
       <section className="section">
         <div className="container">
           <div className="card p-8 text-center">
-            <h2 className="mb-4">Contact</h2>
-            <p className="mb-6 text-gray-700">Stel uw juridische vraag, we helpen u graag.</p>
+            <h2 className="mb-4 text-white">Contact</h2>
+            <p className="mb-6 text-white">Stel uw juridische vraag, we helpen u graag.</p>
             <Link href="/contact" className="btn">Neem contact op</Link>
           </div>
         </div>

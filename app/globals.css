@@ -16,7 +16,7 @@ html:focus-within {
 }
 
 body {
-  @apply bg-white text-gray-900 antialiased;
+  @apply bg-primary-700 text-white antialiased;
   font-feature-settings: "ss01" on, "cv01" on;
 }
 
@@ -29,7 +29,7 @@ body {
 }
 
 .btn-outline {
-  @apply inline-flex items-center justify-center rounded-md border border-accent-600 px-4 py-2.5 text-sm md:text-base font-semibold text-accent-700 hover:bg-accent-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-accent-500 focus-visible:ring-opacity-60 transition;
+  @apply inline-flex items-center justify-center rounded-md border border-accent-600 bg-accent-600 px-4 py-2.5 text-sm md:text-base font-semibold text-white hover:bg-accent-700 hover:border-accent-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-accent-500 focus-visible:ring-opacity-60 transition;
 }
 
 .badge-placeholder {
@@ -37,7 +37,7 @@ body {
 }
 
 .card {
-  @apply rounded-lg border border-gray-200 bg-white shadow-sm hover:shadow-md transition text-gray-900;
+  @apply rounded-lg border border-gray-600 bg-primary-800 shadow-sm hover:shadow-md transition text-white;
 }
 
 .section {

@@ -13,8 +13,8 @@ export function ServiceCard({ service }: { service: Service }) {
         )}
       </div>
       <div className="p-4 md:p-6">
-        <h3 className="mb-2 capitalize">{service.title}</h3>
-        <p className="mb-3 md:mb-4 text-gray-700 text-sm md:text-base">{service.intro}</p>
+        <h3 className="mb-2 capitalize text-white">{service.title}</h3>
+        <p className="mb-3 md:mb-4 text-white text-sm md:text-base">{service.intro}</p>
         <Link href={`/diensten/${service.slug}`} className="btn w-full sm:w-auto inline-block text-center" aria-label={`Lees meer over ${service.title}`}>
           Lees meer
         </Link>

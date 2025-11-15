@@ -22,20 +22,20 @@ export default function BeveiligingPage() {
 
       <section className="section">
         <div className="container">
-          <h2 className="mb-4">Onze beveiliging</h2>
-          <p className="max-w-3xl text-gray-700">
+          <h2 className="mb-4 text-white">Onze beveiliging</h2>
+          <p className="max-w-3xl text-white">
             Wij beveiligen objecten, winkels, evenementen en projecten met zichtbare en proactieve inzet. Onze beveiligers handelen klantvriendelijk,
-            communiceren duidelijk en werken nauw samen met uw team en partners. Zo verminderen we risico’s en verhogen we veiligheid en beleving.
+            communiceren duidelijk en werken nauw samen met uw team en partners. Zo verminderen we risico's en verhogen we veiligheid en beleving.
           </p>
         </div>
       </section>
 
-      <section className="section bg-gray-50">
+      <section className="section">
         <div className="container">
           <div className="card p-6 md:p-8 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
             <div>
-              <h2 className="mb-2">MVO</h2>
-              <p className="max-w-3xl text-gray-700">
+              <h2 className="mb-2 text-white">MVO</h2>
+              <p className="max-w-3xl text-white">
                 We handelen maatschappelijk verantwoord: respectvol naar mensen en omgeving, aandacht voor inclusie en opleiding, en oog voor duurzame
                 keuzes in middelen en planning. Veiligheid gaat bij ons hand in hand met zorg voor mens en maatschappij.
               </p>
@@ -48,7 +48,7 @@ export default function BeveiligingPage() {
       <section className="section">
         <div className="container">
           <div className="mb-6 flex items-end justify-between">
-            <h2>Diensten</h2>
+            <h2 className="text-white">Diensten</h2>
             <Link href="/diensten" className="btn-outline">Alle diensten</Link>
           </div>
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -57,10 +57,10 @@ export default function BeveiligingPage() {
         </div>
       </section>
 
-      <section className="section bg-gray-50">
+      <section className="section">
         <div className="container">
           <div className="mb-6 flex items-end justify-between">
-            <h2>Laatste blogs</h2>
+            <h2 className="text-white">Laatste blogs</h2>
             <Link href="/blogs" className="btn-outline">Alle blogs</Link>
           </div>
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -72,8 +72,8 @@ export default function BeveiligingPage() {
       <section className="section">
         <div className="container">
           <div className="card p-8 text-center">
-            <h2 className="mb-4">Klaar om samen te werken?</h2>
-            <p className="mb-6 text-gray-700">Neem contact op voor een vrijblijvende kennismaking.</p>
+            <h2 className="mb-4 text-white">Klaar om samen te werken?</h2>
+            <p className="mb-6 text-white">Neem contact op voor een vrijblijvende kennismaking.</p>
             <Link href="/contact" className="btn">Neem contact op</Link>
           </div>
         </div>
