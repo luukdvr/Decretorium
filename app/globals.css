@@ -37,7 +37,7 @@ body {
 }
 
 .card {
-  @apply rounded-lg border border-gray-600 bg-primary-800 shadow-sm hover:shadow-md transition text-white;
+  @apply rounded-lg border border-gray-800 bg-black shadow-sm hover:shadow-md transition text-white;
 }
 
 .section {
