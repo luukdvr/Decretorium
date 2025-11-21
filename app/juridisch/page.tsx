@@ -11,7 +11,7 @@ export default function JuridischPage() {
   return (
     <>
       <section aria-label="Hero juridisch" className="relative h-[35vh] min-h-[280px] md:h-[40vh] md:min-h-[320px] w-full">
-        <Picture imageFilename="foto_juridisch.jpg" altOverride="Juridisch" className="absolute inset-0" sizes="100vw" />
+        <Picture imageFilename="foto_juridisch.jpeg" altOverride="Juridisch" className="absolute inset-0" sizes="100vw" />
         <div className="absolute inset-0 bg-gradient-to-t from-primary-800/70 via-primary-700/30 to-transparent" aria-hidden />
         <div className="container relative z-10 flex h-full items-end pb-6 md:pb-8">
           <h1 className="text-white">Juridisch</h1>
