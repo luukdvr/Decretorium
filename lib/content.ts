@@ -26,6 +26,7 @@ export type Blog = {
 const CONTENT_DIR = path.join(process.cwd(), 'content')
 const SERVICES_DIR = path.join(CONTENT_DIR, 'services')
 const BLOGS_DIR = path.join(CONTENT_DIR, 'blogs')
+const BLOGS_JURIDISCH_DIR = path.join(CONTENT_DIR, 'blogs_juridisch')
 
 function safeReadDir(dir: string): string[] {
   try {
@@ -86,8 +87,10 @@ export function getServiceBySlug(slug: string): Service | null {
 }
 
 export function getBlogs(category?: 'beveiliging' | 'juridisch' | 'algemeen'): Blog[] {
-  const files = safeReadDir(BLOGS_DIR).filter(f => f.endsWith('.md'))
-  const blogs = files.map((file) => {
+  const filesNorm = safeReadDir(BLOGS_DIR).filter(f => f.endsWith('.md'))
+  const filesJur = safeReadDir(BLOGS_JURIDISCH_DIR).filter(f => f.endsWith('.md'))
+
+  const blogsNorm = filesNorm.map((file) => {
     const raw = fs.readFileSync(path.join(BLOGS_DIR, file), 'utf8')
     const { data, content } = matter(raw)
     const slug = (data.slug as string) || file.replace(/\.md$/, '')
@@ -98,6 +101,20 @@ export function getBlogs(category?: 'beveiliging' | 'juridisch' | 'algemeen'): B
     const blogCategory = (data.category as 'beveiliging' | 'juridisch' | 'algemeen') || 'algemeen'
     return { slug, title, date, image, content: content?.trim() || LOREM, excerpt, category: blogCategory }
   })
+
+  const blogsJur = filesJur.map((file) => {
+    const raw = fs.readFileSync(path.join(BLOGS_JURIDISCH_DIR, file), 'utf8')
+    const { data, content } = matter(raw)
+    const slug = (data.slug as string) || file.replace(/\.md$/, '')
+    const title = (data.title as string) || slug.replace(/-/g, ' ')
+    const date = (data.date as string) || new Date().toISOString().slice(0, 10)
+    const image = data.image as string | undefined
+    const excerpt = (data.excerpt as string) || excerptFromMarkdown(content || LOREM)
+    const blogCategory: 'beveiliging' | 'juridisch' | 'algemeen' = (data.category as any) || 'juridisch'
+    return { slug, title, date, image, content: content?.trim() || LOREM, excerpt, category: blogCategory }
+  })
+
+  const blogs = [...blogsNorm, ...blogsJur]
 
   // filter by category if provided
   const filtered = category ? blogs.filter(b => b.category === category) : blogs
@@ -115,20 +132,25 @@ export function getBlogs(category?: 'beveiliging' | 'juridisch' | 'algemeen'): B
 }
 
 export function getBlogBySlug(slug: string): Blog | null {
-  const file = path.join(BLOGS_DIR, `${slug}.md`)
-  if (fs.existsSync(file)) {
-    const raw = fs.readFileSync(file, 'utf8')
-    const { data, content } = matter(raw)
-    const date = (data.date as string) || new Date().toISOString().slice(0, 10)
-    const category = (data.category as 'beveiliging' | 'juridisch' | 'algemeen') || 'algemeen'
-    return {
-      slug,
-      title: (data.title as string) || slug.replace(/-/g, ' '),
-      date,
-      image: data.image as string | undefined,
-      content: content?.trim() || LOREM,
-      excerpt: excerptFromMarkdown(content || LOREM),
-      category
+  const pathsToTry = [
+    path.join(BLOGS_DIR, `${slug}.md`),
+    path.join(BLOGS_JURIDISCH_DIR, `${slug}.md`),
+  ]
+  for (const file of pathsToTry) {
+    if (fs.existsSync(file)) {
+      const raw = fs.readFileSync(file, 'utf8')
+      const { data, content } = matter(raw)
+      const date = (data.date as string) || new Date().toISOString().slice(0, 10)
+      const category = (data.category as 'beveiliging' | 'juridisch' | 'algemeen') || (file.includes('blogs_juridisch') ? 'juridisch' : 'algemeen')
+      return {
+        slug,
+        title: (data.title as string) || slug.replace(/-/g, ' '),
+        date,
+        image: data.image as string | undefined,
+        content: content?.trim() || LOREM,
+        excerpt: excerptFromMarkdown(content || LOREM),
+        category
+      }
     }
   }
   return null
