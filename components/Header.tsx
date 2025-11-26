@@ -43,7 +43,9 @@ export function Header() {
               <li className="hidden md:block">
                 <Link className="hover:text-gray-300 transition-colors" href={isJuridisch ? "/juridisch/blogs" : "/blogs"}>Blogs</Link>
               </li>
-              <li className="hidden lg:block"><Link className="hover:text-gray-300 transition-colors" href="/over">Over</Link></li>
+              <li className="hidden lg:block">
+                <Link className="hover:text-gray-300 transition-colors" href={isJuridisch ? "/juridisch/over" : isBeveiliging ? "/beveiliging/over" : "/over"}>Over</Link>
+              </li>
               <li><Link className="btn text-xs px-3 py-2 md:text-sm md:px-4 md:py-2.5" href="/contact">Contact</Link></li>
             </ul>
           )}

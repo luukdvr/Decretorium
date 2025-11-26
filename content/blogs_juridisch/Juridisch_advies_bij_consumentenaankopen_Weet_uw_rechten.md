@@ -1,4 +1,12 @@
-﻿# **Juridisch advies bij consumentenaankopen: weet uw rechten**
+﻿---
+slug: juridisch-advies-bij-consumentenaankopen
+title: "Juridisch Advies bij Consumentenaankopen: Weet Uw Rechten"
+date: 2025-11-18
+excerpt: "Weet welke rechten u heeft bij online en offline aankopen. Lees alles over garantie, retourrecht en wanneer juridisch advies handig is."
+category: juridisch
+---
+
+# **Juridisch advies bij consumentenaankopen: weet uw rechten**
 Iedereen doet dagelijks aankopen, zowel online als in de winkel. Meestal gaat dat probleemloos, maar soms valt een product tegen, wordt er te laat geleverd of ontstaat er discussie over garantie. Veel consumenten weten niet precies welke rechten zij hebben. In deze blog leest u waar u op moet letten en wanneer juridisch advies verstandig kan zijn.
 ## **1. Wettelijke garantie en non-conformiteit**
 In Nederland heeft u recht op een deugdelijk product. Dat betekent dat een product moet voldoen aan de verwachtingen die u ervan mag hebben. Gaat een product sneller kapot dan redelijk is, of werkt het niet zoals beloofd, dan kan er sprake zijn van non-conformiteit. In veel gevallen heeft u dan recht op kosteloze reparatie, vervanging of (gedeeltelijke) terugbetaling.

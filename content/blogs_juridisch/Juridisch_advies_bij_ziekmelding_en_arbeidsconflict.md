@@ -1,4 +1,12 @@
-﻿# **Juridisch advies bij ziekmelding en arbeidsconflict**
+﻿---
+slug: juridisch-advies-bij-ziekmelding-en-arbeidsconflict
+title: "Juridisch Advies bij Ziekmelding en Arbeidsconflict"
+date: 2025-11-12
+excerpt: "Ziekte en arbeidsconflicten vragen om een zorgvuldige aanpak. Lees meer over rechten en plichten van werkgever en werknemer."
+category: juridisch
+---
+
+# **Juridisch advies bij ziekmelding en arbeidsconflict**
 Ziekte en werk zijn gevoelige onderwerpen. Wanneer een ziekmelding samenvalt met spanningen op de werkvloer, kan de situatie snel complex worden. Werkgever en werknemer hebben allebei rechten en plichten bij ziekte, re-integratie en arbeidsconflicten. In deze blog leest u waarom juridisch advies daarbij vaak noodzakelijk is.
 ## **1. Ziekte en re-integratie**
 Bij ziekte geldt dat de werknemer recht heeft op loon doorbetaling en begeleiding bij re-integratie. De werkgever heeft de plicht om passend werk aan te bieden en samen met de werknemer te zoeken naar mogelijkheden om (gedeeltelijk) terug te keren. De bedrijfsarts speelt hierin een belangrijke rol. Onenigheid over belastbaarheid, passend werk of de re-integratie kan leiden tot conflict.

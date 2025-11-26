@@ -1,0 +1,72 @@
+import { Picture } from '@/components/Picture'
+import Link from 'next/link'
+
+export default function BeveiligingOverPage() {
+  return (
+    <>
+      <section aria-label="Hero over beveiliging" className="relative h-[30vh] min-h-[280px] w-full">
+        <Picture imageFilename="foto_beveiliging_op_aanvraag.png" altOverride="Over Decretorium Beveiliging" className="absolute inset-0" sizes="100vw" />
+        <div className="absolute inset-0 bg-gradient-to-t from-primary-800/70 via-primary-700/30 to-transparent" aria-hidden />
+        <div className="container relative z-10 flex h-full items-end pb-8">
+          <h1 className="text-white">Over Decretorium Beveiliging</h1>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container">
+          <h4 className="max-w-3xl text-white leading-relaxed mb-8">
+            Bij Decretorium Beveiliging draait alles om veiligheid, professionaliteit en vertrouwen. Wij beschermen mensen, bedrijven en
+            eigendommen met maatwerkoplossingen, proactieve beveiliging en een mensgerichte benadering.
+          </h4>
+
+          {/* Beeldband Over */}
+          <div className="relative mb-8 aspect-[16/7] overflow-hidden rounded-lg">
+            <Picture imageFilename="ik.jpeg" altOverride="Michael, oprichter van Decretorium" className="absolute inset-0" sizes="100vw" />
+            <div className="absolute inset-0 bg-black/10" aria-hidden />
+          </div>
+
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+            <article className="card p-6 md:p-8">
+              <h2 className="mb-2 text-white">Wie wij zijn</h2>
+              <p className="text-white leading-relaxed">
+                Decretorium Beveiliging is een jong en ambitieus bedrijf, opgericht door Michael. Zijn loopbaan startte als portier in het Rotterdamse
+                nachtleven, waarna hij brede ervaring opdeed binnen diverse takken van de beveiliging. Met een achtergrond in Social Work
+                benadert hij beveiliging vriendelijk, daadkrachtig en respectvol.
+              </p>
+            </article>
+
+            <article className="card p-6 md:p-8">
+              <h2 className="mb-2 text-white">Onze diensten</h2>
+              <p className="text-white leading-relaxed">
+                We bieden onder meer objectbeveiliging, winkel- en terreinbeveiliging, mobiele surveillance, en de inzet van brandwachten en
+                chauffeursdiensten. Wij geloven in voorkomen in plaats van reageren: onze beveiligers signaleren risico's vroegtijdig, handelen
+                adequaat en combineren alertheid met gastvrijheid.
+              </p>
+            </article>
+
+            <article className="card p-6 md:p-8">
+              <h2 className="mb-2 text-white">Onze aanpak</h2>
+              <p className="text-white leading-relaxed">
+                Onze medewerkers zijn opgeleid, gecertificeerd en hebben een hands-on mentaliteit: betrouwbaar, discreet en professioneel. Elke
+                situatie is uniek. Samen ontwikkelen we oplossingen op maat die passen bij uw organisatie, omgeving en veiligheidsdoelen.
+              </p>
+            </article>
+
+            <article className="card p-6 md:p-8">
+              <h2 className="mb-2 text-white">Waarom Decretorium?</h2>
+              <p className="text-white leading-relaxed">
+                Bij Decretorium staat kwaliteit voorop. We werken met gecertificeerde medewerkers, investeren in training en opleiding, en zorgen
+                voor duidelijke communicatie en rapportage. Uw veiligheid is onze prioriteit, en dat merkt u in alles wat we doen.
+              </p>
+            </article>
+
+            <article className="card p-6 md:p-8 md:col-span-2">
+              <p className="font-semibold text-white mb-4">Decretorium Beveiliging – veiligheid met aandacht, vertrouwen en daadkracht.</p>
+              <Link href="/contact" className="btn">Neem contact op</Link>
+            </article>
+          </div>
+        </div>
+      </section>
+    </>
+  )
+}

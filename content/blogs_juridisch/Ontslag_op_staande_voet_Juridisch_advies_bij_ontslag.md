@@ -1,4 +1,12 @@
-﻿# **Ontslag op staande voet: juridisch advies bij ontslag**
+﻿---
+slug: ontslag-op-staande-voet-juridisch-advies
+title: "Ontslag op Staande Voet: Juridisch Advies bij Ontslag"
+date: 2025-11-10
+excerpt: "Ontslag op staande voet heeft grote gevolgen. Lees alles over uw rechten en plichten en waarom juridisch advies essentieel is."
+category: juridisch
+---
+
+# **Ontslag op staande voet: juridisch advies bij ontslag**
 Ontslag op staande voet is een ingrijpende maatregel met grote gevolgen. U raakt direct uw baan én inkomen kwijt en komt mogelijk in de problemen bij het aanvragen van een uitkering. Daarom zijn er strenge regels verbonden aan ontslag op staande voet. In deze blog leest u wat uw rechten zijn en waarom juridisch advies in deze situaties essentieel is.
 ## **1. Wat is ontslag op staande voet?**
 Bij ontslag op staande voet wordt de arbeidsovereenkomst per direct beëindigd vanwege een ‘dringende reden’. Dit kan bijvoorbeeld gaan om diefstal, fraude, hardnekkige werkweigering of ernstig misdragen. De werkgever moet het ontslag direct geven na het incident en de reden duidelijk meedelen. Ontbreekt een dringende reden of is de procedure niet juist gevolgd, dan kan het ontslag ongeldig zijn.
