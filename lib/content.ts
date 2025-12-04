@@ -132,6 +132,7 @@ export function getBlogs(category?: 'beveiliging' | 'juridisch' | 'algemeen'): B
 }
 
 export function getBlogBySlug(slug: string): Blog | null {
+  // First try direct file match (for backward compatibility)
   const pathsToTry = [
     path.join(BLOGS_DIR, `${slug}.md`),
     path.join(BLOGS_JURIDISCH_DIR, `${slug}.md`),
@@ -153,7 +154,10 @@ export function getBlogBySlug(slug: string): Blog | null {
       }
     }
   }
-  return null
+  
+  // If not found by filename, search all blogs by frontmatter slug
+  const allBlogs = getBlogs()
+  return allBlogs.find(blog => blog.slug === slug) || null
 }
 
 export async function renderMarkdown(md: string): Promise<string> {

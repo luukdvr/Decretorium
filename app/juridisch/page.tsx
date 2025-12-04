@@ -56,7 +56,7 @@ export default function JuridischPage() {
         </div>
       </section>
 
-      <section className="section">
+      <section className="section" id="diensten">
         <div className="container">
           <article className="card p-6 md:p-8 max-w-3xl">
             <h2 className="mb-2 text-white">Onze diensten</h2>
