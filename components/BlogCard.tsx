@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Blog } from '@/lib/content'
 
 export function BlogCard({ blog }: { blog: Blog }) {
-  const blogUrl = blog.category === 'juridisch' ? `/juridisch/blogs/${blog.slug}` : `/blogs/${blog.slug}`
+  const blogUrl: string = blog.category === 'juridisch' ? `/juridisch/blogs/${blog.slug}` : `/blogs/${blog.slug}`
   return (
     <article className="card overflow-hidden">
       <div className="p-4 md:p-6">
