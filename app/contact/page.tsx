@@ -4,19 +4,19 @@ export default function ContactPage() {
   return (
     <section className="section gradient-hero">
       <div className="container">
-        <h1 className="mb-4 md:mb-6">Contact</h1>
+        {/* <h1 className="mb-4 md:mb-6">Contact</h1> */}
         <div className="grid gap-4 md:gap-6 sm:grid-cols-2">
           <article className="rounded-lg border border-white/15 bg-white/5 p-4 md:p-6 shadow-sm">
-            <h2 className="mb-2 text-white">Contact beveiliging</h2>
+            <h1 className="mb-2 text-white">Contact</h1>
             <p className="mt-1 text-sm md:text-base">
-              <a className="hover:underline text-white" href="tel:+31647652247" aria-label="Bel Michael op 06 47 65 22 47">06 47 65 22 47</a>
+              <a className="hover:underline text-white" href="tel:0105807990" aria-label="Bel op 010 580 79 90">010 580 79 90</a>
             </p>
             <p className="mt-1 text-sm md:text-base">
               <a className="hover:underline text-white" href="mailto:info@decretorium.nl">info@decretorium.nl</a>
             </p>
           </article>
 
-          <article className="rounded-lg border border-white/15 bg-white/5 p-4 md:p-6 shadow-sm">
+          {/* <article className="rounded-lg border border-white/15 bg-white/5 p-4 md:p-6 shadow-sm">
             <h2 className="mb-2 text-white">Contact juridisch</h2>
             <p className="mt-1 text-sm md:text-base">
               <a className="hover:underline text-white" href="tel:+31645082682" aria-label="Bel Suviënka op 06 45 08 26 82">06 45 08 26 82</a>
@@ -24,7 +24,7 @@ export default function ContactPage() {
             <p className="mt-1 text-sm md:text-base">
               <a className="hover:underline text-white" href="mailto:juridisch@decretorium.nl">juridisch@decretorium.nl</a>
             </p>
-          </article>
+          </article> */}
         </div>
 
         <p className="mt-4 md:mt-6 text-xs md:text-sm text-white/80">Bellen of mailen werkt het snelst. We reageren doorgaans dezelfde werkdag.</p>

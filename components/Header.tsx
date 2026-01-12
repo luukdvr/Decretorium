@@ -34,8 +34,8 @@ export function Header() {
             </ul>
           ) : (
             <ul className="flex items-center gap-2 text-sm md:text-base md:gap-6 text-white">
-              <li className="hidden sm:block"><Link className="hover:text-gray-300 transition-colors" href="/beveiliging">Beveiliging</Link></li>
-              <li className="hidden sm:block"><Link className="hover:text-gray-300 transition-colors" href="/juridisch">Juridisch</Link></li>
+              {/* <li className="hidden sm:block"><Link className="hover:text-gray-300 transition-colors" href="/beveiliging">Beveiliging</Link></li>
+              <li className="hidden sm:block"><Link className="hover:text-gray-300 transition-colors" href="/juridisch">Juridisch</Link></li> */}
               <li className="hidden sm:block">
                 <Link className="hover:text-gray-300 transition-colors" href={isJuridisch || isMVO ? "/juridisch#diensten" : "/diensten"}>Diensten</Link>
               </li>
