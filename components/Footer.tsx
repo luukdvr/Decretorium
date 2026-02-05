@@ -24,7 +24,7 @@ export function Footer() {
           <section aria-label="Contact beveiliging">
             <h2 className="text-base font-semibold">Contact beveiliging</h2>
             <p className="mt-1">
-              <a className="hover:underline" href="tel:+31647652247" aria-label="Bel Michael op 06 47 65 22 47">06 47 65 22 47</a>
+              <a className="hover:underline" href="tel:+3105807990" aria-label="Bel Michael op 010 580 79 90">010 580 79 90</a>
             </p>
             <p className="mt-1">
               <a className="hover:underline" href="mailto:info@decretorium.nl">info@decretorium.nl</a>
@@ -34,7 +34,7 @@ export function Footer() {
           <section aria-label="Contact juridisch">
             <h2 className="text-base font-semibold">Contact juridisch</h2>
             <p className="mt-1">
-              <a className="hover:underline" href="tel:+31645082682" aria-label="Bel Suviënka op 06 45 08 26 82">06 45 08 26 82</a>
+              <a className="hover:underline" href="tel:+3105807990" aria-label="Bel Suviënka op 010 580 79 90">010 580 79 90</a>
             </p>
             <p className="mt-1">
               <a className="hover:underline" href="mailto:juridisch@decretorium.nl">juridisch@decretorium.nl</a>
