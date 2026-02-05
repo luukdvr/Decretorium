@@ -10,7 +10,7 @@ export function Footer() {
           <Link href="/" className="flex items-center gap-3">
             <div className="relative h-12 w-12 md:h-16 md:w-16">
               <Image
-                src="/assets/logo-decretorium(1).png"
+                src="/assets/logo-decretorium-icon.png"
                 alt="Decretorium Logo"
                 fill
                 className="object-contain"

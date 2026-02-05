@@ -17,7 +17,7 @@ export function Header() {
           <div className="relative h-12 w-12 md:h-14 md:w-14 overflow-hidden rounded">
             {/* If logo exists in public/assets, this will show; else the fallback text is read */}
             <Image
-              src="/assets/logo-decretorium(1).png"
+              src="/assets/logo-decretorium-icon.png"
               alt="Logo Decretorium"
               fill
               className="object-contain"

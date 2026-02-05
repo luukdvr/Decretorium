@@ -10,7 +10,7 @@ export default function HomePage() {
           <div className="flex justify-center mb-6 md:mb-8">
             <div className="relative h-24 w-24 md:h-32 md:w-32">
               <Image
-                src="/assets/logo-decretorium(1).png"
+                src="/assets/logo-decretorium-icon.png"
                 alt="Decretorium Logo"
                 fill
                 className="object-contain"

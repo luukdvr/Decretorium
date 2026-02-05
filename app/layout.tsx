@@ -7,8 +7,8 @@ export const metadata: Metadata = {
   title: 'Decretorium — Beveiliging & Juridisch',
   description: 'Decretorium biedt professionele beveiligings- en juridische diensten.',
   icons: {
-    icon: '/assets/logo-decretorium(1).png',
-    apple: '/assets/logo-decretorium(1).png',
+    icon: '/assets/logo-decretorium-icon.png',
+    apple: '/assets/logo-decretorium-icon.png',
   },
 }
 
