@@ -93,7 +93,7 @@ export default function JuridischPage() {
         <div className="container">
           <div className="mb-6 flex items-end justify-between">
             <h2 className="text-white">Laatste blogs</h2>
-            <Link href="/blogs" className="btn-outline">Alle blogs</Link>
+            <Link href="/juridisch/blogs" className="btn-outline">Alle blogs</Link>
           </div>
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {blogs.map((b) => (<BlogCard key={b.slug} blog={b} />))}
